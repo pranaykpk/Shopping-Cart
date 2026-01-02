@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav >
+        <h2>My Shop</h2>
+        <div class="logo"><img id="cart-logo" src="./icons/cart.svg" onclick="toggleCart()" alt="">
+        <span class="cartCount" >0</span>
+    </div>
+        
+    </nav>
+    <section class="display-items">
+        <!-- <div class="card" id="tshirt-1">
+            <img src="./assets/pics/t-shirt.jpeg" alt="item-img">
+            <div class="info">
+                <h3 class="name"></h3>
+                <p class="price">$29.99</p>
+            </div>
+            <button onclick="addToCart()">Add to cart</button>
+        </div>-->
+    </section>
+    <div class="cart">
+        <header>
+            <h3>Your Cart</h3>
+            <p><span class="cartCount">0</span> items</p>
+            <h5 onclick="toggleCart()">X</h5>
+        </header>
+        <div class="cart-items">
+            <!-- <div class="cart-card">
+                <img src="./assets/pics/t-shirt.jpeg" alt="">
+                <div class="cart-item-info">
+                    <p name="name">Stylish t-shirt</p>
+                    <h5>$29.99</h5>
+                </div>
+                <div class="qty-options">
+                    <button>+</button>
+                    <p name="itemsCount">1</p>
+                    <button>-</button>
+                </div>
+            </div> -->
+        </div>
+        <div class="billing" >
+            <p>Subtotal <span id="subtotal"></span></p>
+            <p>Shipping <span id="shipping"></span></p>
+            <h3 >Total <span id="total"></span></h3>
+            <button>Checkout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
